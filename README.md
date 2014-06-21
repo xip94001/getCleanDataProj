@@ -3,17 +3,18 @@ getCleanDataProj
 For Getting and Cleaning Data project
 
 Instructions to run run_analysis.R
+
 1.Get run_analysis.R from the github repo to your local
 
 https://github.com/xip94001/getCleanDataProj/blob/master/run_analysis.R
 
-1.Start RStudio and open run_analysis.R in RStudio
+2.Start RStudio and open run_analysis.R in RStudio
 
 
-2.Make sure you have internet connection when running run_analysis.R
+3.Make sure you have internet connection when running run_analysis.R
 
 
-3.Pre-requsite:
+4.Pre-requisite:
 
 1) Make sure R package plyr is installed. If not, please install it.
 
@@ -22,22 +23,22 @@ https://github.com/xip94001/getCleanDataProj/blob/master/run_analysis.R
 You can run getwd() in RStudio to find the working directory. 
 
 
-4.Highlight all content of run_analysis.R 
+5.Highlight all content of run_analysis.R 
 
 (by clicking in the run_analysis.R source window and then ctrl-A to select all), 
 
 then click on the Run button at the top-right of the run_analysis.R source window to run the script.
 
 
-5.run_analysis.R contains detailed comments on what the R scrip is doing:
+6.run_analysis.R contains detailed comments on what the R scrip is doing:
 
-Data lowdload, load and pre-processing
+Data download, load and pre-processing
 
 1) Download the .zip file to working directory
 
 2) Extract the .zip to subdirectory datadir under working directory
 
-3) Read features data - the data will be used as column names for X data
+3) Read features data - the data will be used as column names after modification for X data
 
 4) Read test and train X data and combine the data
 
@@ -59,7 +60,7 @@ by joining the extracted dataset (from step 2) and activity labels dataset on "a
 
 Step 4.Appropriately labels the data set with descriptive variable names
 
-1) Remove special characters like ( ) - etc
+1) Remove special characters like ( ) - etc from the feature names read above
 
 2) change to lower case
 
@@ -68,7 +69,7 @@ Step 4.Appropriately labels the data set with descriptive variable names
 Step 5.Creates a second, independent tidy data set with the average of 
 Aggregate by activity and subject using FUN mean
 
-Finally, save tidy dataset as csv format (comma seperated) with .txt extension for uploading
+Finally, save tidy dataset as csv format (comma separated) with .txt extension for uploading
 
 
 Note:
